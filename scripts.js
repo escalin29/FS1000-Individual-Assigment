@@ -16,7 +16,7 @@ function validation(){
     }
 
     if(last_name.length < 1) {
-        text = "Please Enter Valid Name";
+        text = "Please Enter Last Name";
         error_message.innerHTML = text;
         return false;
     }
