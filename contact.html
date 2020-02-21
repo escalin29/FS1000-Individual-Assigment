@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <title>My Website</title>
+            <!--Responsive layout-->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="styles.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="scripts.js" ></script>
+        </head>
+    <body>
+      <!--Header/Navbar-->
+        <div class="logo"><a href="#"><img src="Images/logo.png" alt="Logo"></a></div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="homepage.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fa fa-user" aria-hidden="true"></i> About</a></li>
+                    <li><a href="portfolio.html"><i class="fa fa-book" aria-hidden="true"></i> Portfolio</a></li>
+                    <li><a href="resume.html"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Resume</a></li>
+                    <li class="active"><a href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a></li>
+                </ul>
+            </nav> 
+        </div>   
+      
+        <!--Main Contents-->
+        <div class="wrapper">
+          <h2>For Queries</h2>
+          <div id="error_message"></div>
+
+          <form id="myform" onsubmit="return validation()" onreset="return validation()">
+            <div class="input_field">
+              <input type="text" placeholder="First Name" id="first_name">
+            </div>
+            <div class="input_field">
+              <input type="text" placeholder="Last Name" id="last_name">
+            </div>
+            <div class="input_field">
+              <input type="text" placeholder="Email" id="email">
+            </div>
+            <div class="input_field">
+              <input type="text" placeholder="Phone Number" id="phone_number">
+            </div>
+            <div class="input_field">
+              <textarea placeholder="Comments" id="comments"></textarea>
+            </div>
+            <div class="btn">
+              <input type="Submit">
+              <input type="Reset">
+            </div>
+          </form>
+        </div>
+        <div class="emailicon">
+          <h4>Contact for further information</h4>
+          <img src="Images/emailicon.jpg" alt="Email Icon"> 
+          escalin.preethi@gmail.com 
+        </div>
+    </body>
+
+   <!--Footer-->
+   <footer>copyright<i class="fa fa-copyright" aria-hidden="true"></i>E2020</footer>
+</html>
